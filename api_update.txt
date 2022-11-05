@@ -1,0 +1,40 @@
+import joblib
+import librosa
+
+
+@app.route('/voice_classification', methods=['GET', 'POST'])
+def voice_classification():
+    audio_file = request.files['audio']
+    filename = werkzeug.utils.secure_filename(audio_file.filename)
+    print("\nReceived audio File name : " + audio_file.filename)
+    audio_file.save('records/' + filename)
+
+    loaded_rf = joblib.load("voice_rec/random_forest.joblib")
+    mfccs, rms, spectral_flux, zcr = feature_extraction('audios/' + str(filename))
+    extracted_features = np.hstack([mfccs, rms, spectral_flux, zcr])
+
+    y_prediction = loaded_rf.predict([extracted_features])
+
+    out_dict = {0: 'amlodipine', 1: 'benadryl', 2: 'benzonatate', 3: 'diphenhydramin', 4: 'hydromet', 5: 'lisinopril',
+                6: 'losartan', 7: 'metaprolol', 8: 'panadol', 9: 'thyronorm'}
+
+    return_str = '[{ "medicine name" : "' + str(out_dict[y_prediction[0]]) + '" }]'
+
+    return json.loads(return_str)
+
+def feature_extraction(file_name):
+    # X, sample_rate = sf.read(file_name, dtype='float32')
+    X, sample_rate = librosa.load(file_name, sr=None)  # Can also load file using librosa
+    if X.ndim > 1:
+        X = X[:, 0]
+    X = X.T
+
+    stft = np.abs(librosa.stft(X))
+
+    mfccs = np.mean(librosa.feature.mfcc(y=X, sr=sample_rate, n_mfcc=20).T, axis=0)  # Returns N_mel coefs
+    rms = np.mean(librosa.feature.rms(y=X).T, axis=0)  # RMS Energy for each Frame (Stanford's). Returns 1 value
+    spectral_flux = np.mean(librosa.onset.onset_strength(y=X, sr=sample_rate).T,
+                            axis=0)  # Spectral Flux (Stanford's). Returns 1 Value
+    zcr = np.mean(librosa.feature.zero_crossing_rate(y=X).T, axis=0)  # Returns 1 value
+
+    return mfccs, rms, spectral_flux, zcr

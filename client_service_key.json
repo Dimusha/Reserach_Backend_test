@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trim-sunlight-349309",
+  "private_key_id": "e6321be25d6fefc22e74de77f16541b1e23a9a72",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzkZqNqyPH1Jct\nBJr4PwCCTHCO52raE8VUavqxG+y5GmjOUBNycCcD4rtJniafwkravm+MtE+19IJH\n9PMZp9QCWQQSFZ+9m7/ISFTWQkCZ95SryW+bxNDHr/i15ONijFqemrXa9NuuByWS\n3D3yCxVp5Z9CZNf+WaqjKVLGFnT0yxOr3u3IAdu0207xo2pPZDJSgnQmD8pmjjXQ\nM22dBbcZN4j+LPmt0by6xYxqfsNU3BSfsSIPYxHCaPXVDcq+A47NDPfsBF9+3Oao\n0WKoFnPMUtZUXx/225nndwejQPfnUmyc1N7cJ14JnaWXXXtl3wIu9BXQHqZh+Gcv\njJET4CEtAgMBAAECggEAAN7wEXIm3Rq7qvUOmAKc4C+Pt4Rey8pJwYmNSAZFz8tV\nfnP79tOdaig+K/K6PDnHKX1qnBOUdAzzWXb80NSJXi42q1cd1wpmKTSp7f9p7HU7\nbC6GEzV7+mPw6wI+VLrahlIOF2RARn1JYjIdk3Vt9/1W7Y2rUH6jKbcTFtvYBbHj\nrR47J7BGn/A6sDK4JKPCcA1VgOxMCFyzgKJAL+8tCh3tAqA4LMA0o1gJuDp1b/4x\nqVsnnSY3VwXGS8+Mg9tonvioh6IwCRucpdEY0zKjH0wYVge3VdoBG/0WufwDxaNX\nu7JR82OlAE9bF+/GZO1owetAsW5DCfgnAT1VAMSyvwKBgQDsW6fUdV1KGRwsdLM9\nS2nTOvcwiS2oweEUIfzZ+6BGOloKbHqLAn8MQ980AtdBcOrpV44CDeGsG+7qhCH7\n6rNDb/CS8LjUA4ovIDN5bFSBEeVmC8plbF2QPdpo2khzniMVT9J+CPHZ72Kg5M/z\negbZsRo0sYAiVZ1ik+6YXyDUGwKBgQDCfcxKYs68qWw0iPXOwb2hsZHMEH4FuhnX\ntjKxjTxiRVHqDjkahfc5wSDS40gyMH0PL1DtBHYhIPKbBVVUEcw3ugzSSckxkeQp\n9ytsJpPp68mwnnQ3VOyvUrtSnFefR52oWfzjz6RaqIIcOQkJKvZZF2qAlf8x1wqg\nrzatlXDkVwKBgQCDf+L6E2oZxaqlGTB307NG8DGC8W9TyrpdJyO0a4iaSfC6h+wN\n1w+0VTaji0kTga1QsYOypOJ/jPL5yxXVQJkH1gm01vUeD/IbkgDRd3H0dW55vemX\nUBkmHSOc3oUcvkiqnMRxlqxoIgVvmp4Pyj5xc1UvJ+owMA3mQIOohpSPLQKBgFo8\n0bdFptQD649oaFv4qgpGf/XlRQNVOD5Ma7LTa8vQi9QDq1zyASXLxHX0PAAFXVDZ\nTDvcEQ8H4WgpjlCGPXExoldDItUb8nfCFWSFdaVX3+lRa2xsu7AQu5b1sPXW3YBJ\n2Dq+kWv6uPttPxMA2vG1GpX0gkXWlzi8cqsRJiLbAoGALLmmcUKrI/7MEbQq3ptc\nrFBuMGzGES22nMMZKAPirf7814+HlNe8snwOKj6OxE5wbyz7xZ8mL4Iw2GFnBBKp\npj002nS9Mi+mEkg2iw38cgPzpWHs/kuoow/7V9S3gqjV2YqUri2zyLeMlYCaDiwu\nfHnZ3InJ0BVGWc20F9N3nzw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "v-voice-to-text@trim-sunlight-349309.iam.gserviceaccount.com",
+  "client_id": "114379383996226275186",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/v-voice-to-text%40trim-sunlight-349309.iam.gserviceaccount.com"
+}
